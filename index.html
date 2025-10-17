@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceive Fertility Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-section { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('SOURCES/iiii.jpeg'); background-size: cover; background-position: center; }
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #efe0e1; }
+        ::-webkit-scrollbar-thumb { background-color: #c48f92; border-radius: 20px; border: 3px solid #efe0e1; }
+        ::-webkit-scrollbar-thumb:hover { background-color: #8b6769; }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#">
+                <img src="SOURCES/logo3.png" alt="Conceive Fertility Logo" class="h-20">
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-[#c48f92] transition duration-300">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-[#c48f92] transition duration-300">Our Services</a>
+                <a href="#team" class="text-gray-600 hover:text-[#c48f92] transition duration-300">Our Team</a>
+                <a href="#contact" class="bg-[#c48f92] text-white px-5 py-2 rounded-full hover:bg-[#8b6769] transition duration-300 shadow-md">Book Appointment</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 text-[#c48f92]"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#about" class="block text-gray-600 hover:text-[#b3888a] transition duration-300">About Us</a>
+            <a href="#services" class="block text-gray-600 hover:text-[#b3888a] transition duration-300">Our Services</a>
+            <a href="#team" class="block text-gray-600 hover:text-[#b3888a] transition duration-300">Our Team</a>
+            <a href="#contact" class="block bg-[#c48f92] text-white text-center mt-2 px-5 py-2 rounded-full hover:bg-[#8b6769] transition duration-300 shadow-md">Book Appointment</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section text-white h-[85vh] flex items-center">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Where Hope Meets Science</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-slate-200">Building families with compassionate expertise and advanced care. Your journey to parenthood begins here.</p>
+                <a href="#contact" class="bg-white text-[#c48f92] px-8 py-3 rounded-full font-semibold hover:bg-[#f6efef] transition duration-300 text-lg shadow-xl">Start Your Journey</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 id="about-title" class="text-3xl md:text-4xl font-bold text-[#896266]"></h2>
+                    <p id="about-subtitle" class="text-gray-600 mt-4 max-w-2xl mx-auto"></p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div id="feature-1" class="bg-slate-50 p-8 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-[#efe0e1] text-[#c99b9e] rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800"></h3>
+                        <p class="text-gray-600"></p>
+                    </div>
+                    <div id="feature-2" class="bg-slate-50 p-8 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-[#efe0e1] text-[#c99b9e] rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800"></h3>
+                        <p class="text-gray-600"></p>
+                    </div>
+                    <div id="feature-3" class="bg-slate-50 p-8 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-[#efe0e1] text-[#c99b9e] rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800"></h3>
+                        <p class="text-gray-600"></p>
+                    </div>
+                </div>
+                <div class="mt-20">
+                    <div class="text-center mb-12">
+                         <p id="video-description" class="text-gray-600 mt-4 max-w-2xl mx-auto"></p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-lg max-w-3xl mx-auto">
+                        <video id="tour-video" class="w-full rounded-lg shadow-md" controls>
+                            <source type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 id="services-title" class="text-3xl md:text-4xl font-bold text-[#896266]"></h2>
+                    <p id="services-subtitle" class="text-gray-600 mt-4 max-w-2xl mx-auto"></p>
+                </div>
+                <div id="services-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    </div>
+            </div>
+        </section>
+    
+        <section id="team" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 id="team-title" class="text-3xl md:text-4xl font-bold text-[#896266]"></h2>
+                    <p id="team-subtitle" class="text-gray-600 mt-4 max-w-2xl mx-auto"></p>
+                </div>
+                <div id="team-container" class="flex overflow-x-auto space-x-8 pb-4">
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-[#f8f2f3]">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 id="contact-title" class="text-3xl md:text-4xl font-bold text-[#896266]"></h2>
+                    <p id="contact-subtitle" class="text-gray-600 mt-4 max-w-2xl mx-auto"></p>
+                </div>
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-xl">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="">
+                        <input type="hidden" name="from_name" id="form-from-name" value="">
+                        <input type="hidden" name="redirect" value="">
+                        <input type="hidden" name="subject" id="subjectInput" value="">
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" name="firstName" id="firstNameInput" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#c48f92]" required>
+                            <input type="text" name="lastName" id="lastNameInput" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#c48f92]" required>
+                        </div>
+                        <div class="mb-6">
+                            <input type="email" name="email" id="emailInput" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#c48f92]" required>
+                        </div>
+                        <div class="mb-6">
+                            <input type="tel" name="phone" id="phoneInput" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#c48f92]" required>
+                        </div>
+                        <div class="mb-6">
+                            <textarea name="message" id="messageInput" rows="4" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#c48f92]"></textarea>
+                        </div>
+                        <button type="submit" id="contact-button" class="w-full bg-[#c48f92] text-white p-4 rounded-full font-bold text-lg hover:bg-[#8b6769] transition duration-300 shadow-md"></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" class="bg-white">
+            <div class="container mx-auto px-6 py-20">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#8b6769]">Visit Our Center</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Find us at our convenient location in Alexandria.</p>
+                </div>
+                <div class="rounded-lg shadow-xl overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.332060133503!2d29.95073307622955!3d31.22868747435136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c50027e9798f%3A0xfea2324dfb15183a!2z2YPZiNix2KfZhdmK2Kkg2YTZhNin2LHZhdinINin2YTZhdmI2YfYsdmK2YY!5e0!3m2!1sen!2seg!4v1729122241680!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold text-[#c48f92] mb-2">Conceive Fertility</h3>
+            <p class="text-gray-400 mb-6">© 2024 Conceive Fertility Center . Making miracles possible.</p>
+            <p id="footer-phones" class="text-gray-400 mb-6"></p>
+            <div id="social-links-container" class="flex justify-center space-x-6">
+                </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
